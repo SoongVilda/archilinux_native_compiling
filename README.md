@@ -30,6 +30,17 @@ CFLAGS="-march=tigerlake -O2 -pipe -fno-plt -fexceptions \
         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security \
         -fstack-clash-protection -fcf-protection"
 ```
+You can also use the ```native``` flag, which will automatically detect all flags compatible with your architecture.
+Use this solution when the result from the previous one is ambiguous or you suspect that the information may be wrong. 
+```
+#-- Compiler and Linker Flags
+#CPPFLAGS=""
+CFLAGS="-march=native -O2 -pipe -fno-plt -fexceptions \
+        -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security \
+        -fstack-clash-protection -fcf-protection"
+```
+## !!! Remember not to share packages compiled in this way, as they are unlikely to work for other users !!!
+
 ## Dependencies
 Script depends on two packages, impossible to run correctly without the following packages.
 - ```bc``` https://archlinux.org/packages/extra/x86_64/bc/
