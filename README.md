@@ -5,7 +5,7 @@ This repository contains a script and a couple of tips for compiling native pack
 ## !!! Requirements before you use this script !!!
 ### You need following packages
 ```
-sudo pacman -S --needed pacman-contrib diffutils findutils mlocate sudo vim
+sudo pacman -S --needed pacman-contrib diffutils findutils mlocate sudo vim bs
 ```
 
 ### Know your CPU architecture
