@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Script description
 ##  Step one - we need to obtain all PKGBUILDs for native building ##
-BUIlDDIR=/home/$USER/zstd
+BUILDDIR=/home/$USER/zstd
 
 ## Create location for compiling and cd into it ##
-mkdir ${BUIlDDIR}
-cd ${BUIlDDIR}
+mkdir ${BUILDDIR}
+cd ${BUILDDIR}
 
 ## List PKGBUILDs to compile ##
 #Example: _packages="core/zstd"

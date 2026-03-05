@@ -1,11 +1,11 @@
-# Achilinux Native Compiling
+# ArchLinux Native Compiling
 
 This repository contains a script and a couple of tips for compiling native packages.
 
 ## !!! Requirements before you use this script !!!
 ### You need following packages
 ```
-sudo pacman -S --needed pacman-contrib diffutils findutils mlocate sudo vim bs
+sudo pacman -S --needed pacman-contrib diffutils findutils mlocate sudo vim bc
 ```
 
 ### Know your CPU architecture
